@@ -1,0 +1,16 @@
+.top{
+    margin-top: 4em;
+    display: flex;
+    /* margin-left: 15em; */
+    width:43em;
+    justify-content: center;
+    margin: 4em auto -1em;
+}
+p{
+    text-align: center;
+    padding-top: 11px;
+    margin-left:7px;
+    font-size: 0.8em;
+    color:grey;
+    margin-right:auto;
+}

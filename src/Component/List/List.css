@@ -1,0 +1,163 @@
+.box{
+    padding:2em;
+}
+.desc{
+    padding:1.2em;
+    width:50em;
+    border:none;
+    margin-top: 0px;
+}
+.title{
+    padding:1.2em;
+    width:50em;
+    border: none;
+}
+input:focus{
+    border:none;
+    outline:none;
+}
+textarea:focus{
+    outline:none;
+}
+.box-td{
+    border:1px solid grey;
+    width:45em;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin:8em auto 1em auto; */
+    margin-bottom: 1em;
+}
+.box{
+    width:45em;
+    margin: auto;
+}
+.btns{
+    display: flex;
+    margin-right: 4em;
+}
+.btn-add,.btn-cancel{
+    padding: 0.5em;
+    cursor:pointer;
+}
+.btn-add{
+    margin-right: 1em;
+    background-color: #db4c3f;
+    border: none;
+    color:white;
+    border-radius: 4px;
+}
+.list{
+    color:black;
+    display: flex;
+    flex-direction: column;
+}
+.dataList{
+    margin:auto;
+    width:45em;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left
+}
+.txtarea{
+    color:grey;
+}
+.hr{
+    border-bottom:1px solid rgb(173, 167, 167);
+    padding-bottom: 1.5em;
+    display:flex;
+    margin-top:12px;
+}
+.checkbox:nth-child(even){
+    display:block;
+}
+
+.checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(116, 113, 113);
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    display:flex;
+    margin-top: 1.2em;
+}
+.description{
+    color:grey;
+}
+.checkbox:checked {
+    background-color: gray;
+}
+.main{
+    margin:auto;
+}
+.dropdown{
+    position: relative;
+    width: 3em;
+    left: 75em;
+    top: -2.6em;
+}
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    position:absolute;
+    width: 10em;
+    background-color: white;
+    border: 1px solid rgb(190, 189, 189);
+    box-shadow: 0 1px 8px 0 rgb(190, 189, 189);
+    cursor:pointer;
+}
+.dropdown-content:hover{
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #arrow_up{
+      color:black;
+      vertical-align: middle;
+  }
+  .dropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+  }
+  .dropdown-content div:hover{
+      background-color: rgb(219, 214, 214);
+  }
+  .sort{
+    color:grey;
+    font-size: 0.8em;
+    padding-top:18px;
+    margin:0;
+    display: flex;
+}
+#sort{
+    color:grey;
+    margin-top: -0.1em;
+    margin-left: 0.3em;
+}
+.sort-icon{
+    display: flex;
+}
+@media(min-width:768px) and (max-width:979px){
+.dropdown{
+    margin-left: -31em;
+}
+}
+@media(min-width:976px) and (max-width:1600px){
+    .dropdown{
+        margin-left: -10em;
+    }
+}
+@media(max-width:767px){
+    .dropdown{
+        margin-left: -60em;
+    } 
+}
