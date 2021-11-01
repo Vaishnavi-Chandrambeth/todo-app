@@ -24,8 +24,7 @@ export default class List extends Component {
         title: "",
         desc: "",
         items: [],
-        sort: null,
-        IsSorted:false
+        sort: null
     };
 
     componentDidMount() {
@@ -115,21 +114,19 @@ export default class List extends Component {
                         </div>
                     </div>
                 </form>
-                <div>{
+                <div>
                     <ul className="list">
                         {items && items.map((data: any, key: number) => (
                             <div className="hr"> <input type="checkbox" className="checkbox" onClick={() => this.deleteList(key)} /><li className="dataList" key="data.title" >
                                 {data.title}<br /> {data.desc}
                             </li> </div>
-                        ))}
-
+                        ))}                        
                         {this.state.sort && items.map((data: any, key: number) => (
                             <div className="hr"> <input type="checkbox" className="checkbox" onClick={() => this.deleteList(key)} /><li className="dataList" key="data.title" >
                                 {data.title}<br /> {data.desc}
                             </li> </div>
                         ))}
                     </ul>
-    }
                 </div>
             </div>
         )
